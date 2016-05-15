@@ -9,7 +9,7 @@
   "main": [
     "dist/css/unslider-dots.css",
     "dist/css/unslider.css",
-    "src/js/unslider-min.js"
+    "src/js/unslider.js"
   ],
   "keywords": [
     "slider",
