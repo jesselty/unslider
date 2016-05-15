@@ -1,6 +1,6 @@
 {
   "name": "unslider",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "homepage": "http://unslider.com",
   "authors": [
     "Visual Idiot <iam@visualidiot.com>"
@@ -9,7 +9,7 @@
   "main": [
     "dist/css/unslider-dots.css",
     "dist/css/unslider.css",
-    "dist/js/unslider-min.js"
+    "src/js/unslider-min.js"
   ],
   "keywords": [
     "slider",
