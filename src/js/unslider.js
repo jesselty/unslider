@@ -225,15 +225,6 @@
             return self;
         };
 
-        self.$context.hover(
-            function() {
-                self.stop();
-            },
-            function() {
-                self.start();
-            }
-        );
-
 
         //  Set up our navigation
         self.initNav = function() {
@@ -335,7 +326,6 @@
                         // Check if swiped distance is greater than threshold.
                         // If yes slide to next/prev slide. If not animate to
                         // starting point.
-
                         if ((Math.abs(e.distX) / width) > self.options.swipeThreshold) {
 
                             self[e.distX < 0 ? 'next' : 'prev']();
@@ -491,6 +481,17 @@
                 self.$container.css('margin-' + prop, '-100%');
             }
 
+            if (self.options.showRelevantArrows) {
+                if (to === 0) {
+                    self.$arrows[0].hide();
+                } else if (to === self.$slides.length - 1) {
+                    self.$arrows[1].hide();
+                } else {
+                    self.$arrows.forEach(function(item, index) {
+                        item.show();
+                    });
+                }
+            }
             return self.slide(prop, to);
         };
 
