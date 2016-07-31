@@ -7,8 +7,6 @@
   ],
   "description": "The simplest little slider.",
   "main": [
-    "dist/css/unslider-dots.css",
-    "dist/css/unslider.css",
     "src/js/unslider.js"
   ],
   "keywords": [
